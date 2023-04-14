@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    justify-content: center;
+}
+
+#everything {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(62, 16px);
+    grid-template-columns: repeat(50, 16px);
+
+    background-color: rgb(28, 95, 95);
+    z-index: 2;
+}
+
+#house {
+    display: inherit;
+    grid-column-start: 4;
+    grid-column-end: 48;
+
+    grid-row-start: 2;
+    grid-row-end: 57;
+
+    background-image: url(./imgs/building.png);
+    z-index: 5;
+}
+
+.upperWindow {
+    width: 128px;
+    height: 128px;
+    display: inherit;
+    background-image: url(./imgs/top_floor_facade.png);
+    z-index: 6;
+
+}
+
+.lowerWindow {
+    width: 128px;
+    height: 128px;
+    display: inherit;
+    background-image: url(./imgs/facade.png);
+    z-index: 6;
+
+
+
+}
+
+.windowGlass {
+    background-image: url(./imgs/windowGlass.png);
+    opacity: 0.5;
+    z-index: 5;
+}
+
+.c1 {
+    grid-column-start: 7;
+    grid-column-end: 15;
+}
+
+.c2 {
+    grid-column-start: 17;
+    grid-column-end: 25;
+}
+.c3 {
+    grid-column-start: 27;
+    grid-column-end: 35;
+}
+
+.c4 {
+    grid-column-start: 37;
+    grid-column-end: 45;
+}
+
+.r1 {
+    grid-row-start: 14;
+    grid-row-end: 22;
+}
+.r2 {
+    grid-row-start: 22;
+    grid-row-end: 30;
+}
+.r3 {
+    grid-row-start: 30;
+    grid-row-end: 38;
+}
